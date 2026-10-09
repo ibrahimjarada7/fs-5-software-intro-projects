@@ -46,6 +46,9 @@ ax1.set_xlabel("Time(s)")
 ax1.set_ylabel("Error(m/s)")
 ax1.set_title("Error vs Time")
 ax1.axhline(y = 0, color = "y", linestyle = "--")
+ax1.axvline(x = 35, color = "r", linestyle = "--")
+# Formatting for graph
+
 
 
 ax2.plot(times, velocities)  # Graph for Velocity vs Time
@@ -53,7 +56,8 @@ ax2.set_xlabel("Time(s)")
 ax2.set_ylabel("Velocity(m/s)")
 ax2.set_title("Velocity vs Time")
 ax2.axhline(y = 20, color = "y", linestyle = "--")
-
+ax2.axvline(x = 35, color = "r", linestyle = "--")
+# Also formatting for graph
 
 plt.tight_layout()
 plt.show()
